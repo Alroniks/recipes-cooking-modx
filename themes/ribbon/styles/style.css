@@ -29,9 +29,10 @@ BODY {
 		position:absolute;
 		top:0;
 		right:120px;
-		width:40px;
+		width:100px;
 		height:120px;
-		background:url(../images/ribbon.svg) no-repeat;
+		/*background:url(../images/ribbon.svg) no-repeat;*/
+		background:url(../images/lovata.png) no-repeat;
 		content:'';
 		}
 
