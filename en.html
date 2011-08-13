@@ -17,7 +17,7 @@
 		  color: white;		  
 		}
 		#Soup H2 {
-		  color: white;		  
+		  color: orange;		  
 		  text-align: right;
 		}
 		#TTX section, #Capot section {
@@ -27,6 +27,18 @@
 		  width: 30%;
 		  float: right;
 		}
+		
+		#DevComponent section {
+		  background: white;
+		}
+		#DevComponent H2, #TV H2 {
+		  padding-top: 62%;
+		  font-size: inherit;
+		}
+		#TV H2 { text-align: right; }
+  	#TeaPowerfull H2 {
+  	  color: orange;
+  	}
 		
 	</style>
 </head>
@@ -43,6 +55,15 @@
 			<img src="pictures/cover.jpg" alt="">
 		</section>
 	</div></div>
+	<div class="slide" id="company"><div>
+		<section>
+		  <header>
+				<h2>Работа</h2>
+			</header>
+			<img src="pictures/lovata.png" alt=""><br/><br/>
+			<img src="pictures/hh.png" alt=""/>
+		</section>
+	</div></div>
 	<div class="slide bg" id="modx-admin"><div>
 		<section>
 			<img src="pictures/modx-admin.png" alt="">
@@ -57,7 +78,7 @@
 			  <li>Linux, Mac OS, Windows</li>
 			  <li>Apache 1.3.x - 2.2.x, IIS 6.0, lighttpd, Zeus</li>
 			  <li>PHP 5.1.1+</li>
-			  <li>MySQL 4.1.20+, кроме 5.0.51</li>
+			  <li>MySQL 4.1.20+, кроме 5.0.51, MS SQL Server</li>
 			  <li>Mozilla Firefox 3.0+, Apple Safari 3.1.2+, IE 8+</li>
 			</ul>
 			<img src="pictures/gears.jpg" alt="" />
@@ -71,18 +92,18 @@
 			<ul>
 			  <li>xPDO 2.0</li>
 			  <li>Smarty</li>
-			  <li>xPDO Cache Manager</li>
+			  <li>Ext JS (Sencha)</li>
 			  <li>Репозитории пакетов</li>
 			  <li>Права доступа</li>
 			  <li>Контексты</li>
 			</ul>
-			<img src="pictures/car.jpg" alt="" />
+			<img src="pictures/car.jpg" alt="" style="position: absolute; bottom: 10px; right: 10px;"/>
 		</section>
 	</div></div>
 	<div class="slide bg" id="Appetizer"><div>
 		<section>
 			<header>
-				<h2>Закуска</h2>
+				<h2>На закуску</h2>
 			</header>
 			<img src="pictures/salad.jpg" alt="" />	
 		</section>
@@ -93,14 +114,15 @@
 				<h2>[[ Элементы ]]</h2>
 			</header>
 			<ul>
-			  <li>[[$chunk]]</li>
-			  <li>[[snippet? &amp;paramName=`paramValue`]]</li>
-			  <li>[[*tvparam]]</li>
-			  <li>[[+placeholder]]</li>
+			  <li>Resource</li>
+			  <li>Template</li>
+			  <li>[[$chunk]] - Chunk (html)</li>
+			  <li>[[snippet? &amp;paramName=`paramValue`]] - Snippet (php)</li>
+			  <li>[[*tvparam]] - Template Variable</li>
+			  <li>[[+placeholder]]</li>			  
 			</ul>			
 		</section>
-	</div></div>
-	
+	</div></div>	
 	<div class="slide" id="Template"><div>
 		<section>
 			<header>
@@ -110,8 +132,7 @@
 			  <code>&lt;head&gt;[[$head]]&lt;/head&gt;</code>
 			  <code>&lt;body&gt;</code>
 			  <code>  [[$header]]</code>
-			  <code>  &lt;div class="l-content"&gt;</code>
-			  <code>    [[$booklet]]</code>
+			  <code>  &lt;div class="l-content"&gt;</code>			  
 			  <code>    [[*content]]</code>
 			  <code>  &lt;/div&gt;</code>
 			  <code>  [[$footer]]​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</code>
@@ -119,21 +140,214 @@
 			</pre>
 		</section>
 	</div></div>
-	
+	<div class="slide" id="Chunk"><div>
+		<section>
+			<header>
+				<h2>Пример чанка</h2>
+			</header>
+			<pre>			  
+			  <code>&lt;div class="b-booklet"&gt;</code>
+        <code>  [[getResources? </code>
+        <code>        &amp;resources=`[[*current_action]]` </code>
+        <code>        &amp;tpl=`main_action` </code>
+        <code>        &amp;depth=`0` </code>
+        <code>        &amp;limit=`1`]]</code>
+        <code>&lt;/div>&gt;</code>
+			</pre>
+		</section>
+	</div></div>
+	<div class="slide" id="Snippet"><div>
+		<section>
+			<header>
+				<h2>Пример сниппета</h2>
+			</header>
+			<pre>
+        <code>$resource = $modx->getObject("modResource", </code>
+        <code>                               array("id" => $id));</code>
+        <code>if($resource->class_key === "modSymLink")</code>
+        <code>  return $resource->content;</code>
+        <code>else return $id;</code>
+      </pre>
+		</section>
+	</div></div>
+	<div class="slide bg" id="TV"><div>
+		<section>
+			<header>
+				<h2>Пример Template Variable</h2>
+			</header>
+			<img src="pictures/tv.png" alt="" style="height: 100%;"/>
+		</section>
+	</div></div>
 	<div class="slide bg" id="Soup"><div>
 		<section>
 			<header>
-				<h2>Первое</h2>
+				<h2>Супчику бы...</h2>
 			</header>
 			<img src="pictures/soup.jpg" alt="" />	
+		</section>
+	</div></div>
+	<div class="slide" id="Rule"><div>
+		<section>
+			<header>
+				<h2>Правила разработки сайта</h2>
+			</header>
+			<ol>
+			  <li>Шаблон на страницу</li>
+			  <li>Блоки</li>
+			  <li>Статика в отдельных чанках</li>
+			  <li>Сниппет на задачу</li>
+			  <li>TV по категориям</li>			  
+			</ol>
+		</section>
+	</div></div>
+	<div class="slide" id="Ctx"><div>
+		<section>
+			<header>
+				<h2>Контексты</h2>
+			</header>
+			<pre><code>$modx->initialize('web');</code></pre>
+			<ul>
+			  <li>mgr</li>
+			  <li>web</li>
+			  <li>Свои контексты</li>
+			</ul>
+		</section>
+	</div></div>
+	<div class="slide" id="CtxEx"><div>
+		<section>
+			<header>
+				<h2>Пример использования контекстов</h2>
+			</header>
+			<pre>
+        <code>switch (strtolower(MODX_HTTP_HOST)) {</code>
+        <code>  case 'kaffee-gutt.by':</code>
+        <code>      $modx->initialize('russian'); break;</code>
+        <code>  case 'kaffee-gutt.com':</code>
+        <code>      $modx->initialize('english'); break;</code>
+        <code>  default:</code>
+        <code>      $modx->initialize('web'); break;</code>
+        <code>}</code>
+      </pre>
+		</section>
+	</div></div>
+	<div class="slide" id="ACL"><div>
+		<section>
+			<header>
+				<h2>Права доступа</h2>
+			</header>			
+			<ol>
+			  <li>Principal (User Groups)</li>
+			  <li>Target (Контексты, Группы ресурсов)</li>
+			  <li>Access Policy (Список разрешений)</li>
+			  <li>Authority (минимальный уровень доступа, Роль)</li>
+			</ol>
 		</section>
 	</div></div>
 	<div class="slide bg" id="Hot"><div>
 		<section>
 			<header>
-				<h2>Горячее</h2>				
+				<h2>Мяса хочу!</h2>				
 			</header>
 			<img src="pictures/hot.jpg" alt="" />	
+		</section>
+	</div></div>
+	<div class="slide" id="DevP"><div>
+		<section>
+			<header>
+				<h2>Основные принципы MODx</h2>				
+			</header>
+			<ol>
+			  <li>MVC</li>
+			  <li>PDO (xPDO)</li>
+			  <li>Connectors</li>
+			</ol>
+		</section>
+	</div></div>
+	<div class="slide" id="DevList"><div>
+		<section>
+			<header>
+				<h2>Разработка</h2>				
+			</header>
+			<ol>
+			  <li>Snippets, Plugins</li>
+			  <li>Custom Manager Pages</li>
+			  <li>3rd-Party Компоненты</li>
+			  <li>Ядро</li>
+			</ol>
+		</section>
+	</div></div>
+	<div class="slide" id="DevFrame"><div>
+		<section>
+			<header>
+				<h2>MODx как фреймворк</h2>				
+			</header>
+			<pre>
+        <code>require_once '/absolute/path/to/modx/config.core.php';</code>
+        <code>require_once MODX_CORE_PATH.'model/modx/modx.class.php';</code>
+        <code>$modx = new modX();</code>
+        <code>$modx->initialize('web');</code>
+        <code>$modx->getService('error', 'error.modError');</code>
+      </pre>
+		</section>
+	</div></div>
+	<div class="slide" id="DevSnPl"><div>
+		<section>
+			<header>
+				<h2>Сниппеты и Плагины</h2>				
+			</header>
+			Snippet
+			<ol>
+			  <li>Обычный include</li>
+			  <li>API</li>
+			</ol>
+			Plugin
+			<ol>
+			  <li>Реакция на событие</li>
+			  <li>Хуки</li>
+			</ol>
+		</section>
+	</div></div>
+	<div class="slide" id="DevEvent"><div>
+		<section>
+			<header>
+				<h2>Events</h2>				
+			</header>
+			<pre>
+        <code>$eventName = $modx->event->name;</code>
+        <code>switch($eventName) {</code>
+        <code>  case 'OnWebPageInit': /* do something */ break;</code>
+        <code>  case 'OnWebPagePrerender': /* do something else */ break;</code>
+        <code>}</code>
+      </pre>
+		</section>
+	</div></div>
+	<div class="slide" id="Dev3rd"><div>
+		<section>
+			<header>
+				<h2>Разработка компонентов</h2>				
+			</header>
+			<ol>
+			  <li>Пакет: snippets, chunks, CMP, plugins...</li>
+			  <li>Transport Packadge - PackMan Component</li>
+			  <li>Providers</li>
+			  <li><a href="http://modx.com/extras" target="_blank">Официальный репозиторий</a></li>
+			</ol>
+		</section>
+	</div></div>
+	<div class="slide" id="DevPackman"><div>
+		<section>
+			<header>
+				<h2>PackMan</h2>				
+			</header>
+			<img src="pictures/packman.png" alt="" class="middle" />
+		</section>
+	</div></div>
+	<div class="slide bg" id="DevComponent"><div>
+		<section>
+			<header>
+				<h2>Управление пакетами</h2>				
+			</header>
+			<img src="pictures/packeges.png" alt="" />
 		</section>
 	</div></div>
 	<div class="slide bg" id="Tea"><div>
@@ -144,22 +358,82 @@
 			<img src="pictures/tea.jpg" alt="" />	
 		</section>
 	</div></div>
+	<div class="slide bg" id="TeaPowerfull"><div>
+		<section>
+			<header>
+				<h2>Производительность</h2>				
+			</header>
+			<img src="pictures/proizv.jpg" alt=""  />
+		</section>
+	</div></div>
+	<div class="slide" id="TeaOwn"><div>
+		<section>
+			<header>
+				<h2>Свои решения</h2>				
+			</header>
+			<ol>
+			  <li>Каталог, магазин (Vizion Cart)</li>
+			  <li>Статистика, сообщения, обратная связь, отзывы</li>
+			  <li>Нестандартные задачи</li>
+			</ol>
+		</section>
+	</div></div>
+	<div class="slide" id="TeaPodhod"><div>
+		<section>
+			<header>
+				<h2>Процесс</h2>				
+			</header>
+			<p>Дизайн->Верстка->Код</p>
+			<p><mark class="important">Верстка->Код + Код->Верстка</mark></p>
+		</section>
+	</div></div>
 	<div class="slide bg" id="Dessert"><div>
 		<section>
 			<header>
-				<h2>Десерт</h2>				
+				<h2>Несите десерт!</h2>				
 			</header>
 			<img src="pictures/dessert.jpg" alt="" />	
 		</section>
 	</div></div>
-	<div class="slide" id="Questions"><div>
+	<div class="slide" id="Roadmap"><div>
 		<section>
 			<header>
-				<h2>Вопросы?</h2>
+				<h2>Что нас ждет в Revolution 2.2?</h2>				
 			</header>
-			<p class="center">
-			  <img src="pictures/vopros.jpg" alt="Вопросы" />
-			</p>
+			<ol>
+			  <li>Сжатие CSS/JS на лету</li>
+			  <li>Полное покрытие unit-тестами <span style="font-size: 25px;">✔</span></li>
+			  <li>Больше методов API</li>
+			  <li>Статические элементы (в файлах)</li>			  
+			</ol>
+		</section>
+	</div></div>
+	<div class="slide" id="Roadmap1"><div>
+		<section>
+			<header>
+				<h2>Что нас ждет в Revolution 2.2?</h2>				
+			</header>
+			<ol>
+			  <li>Сжатие CSS/JS на лету</li>
+			  <li>Полное покрытие unit-тестами <span style="font-size: 25px;">✔</span></li>
+			  <li>Больше методов API</li>
+			  <li><mark>Статические элементы (в файлах)</mark></li>			  
+			</ol>
+		</section>
+	</div></div>
+	<div class="slide" id="Github"><div>
+		<section>
+			<header>
+				<h2>Github</h2>				
+			</header>
+			<img src="pictures/octocat.png" alt="" class="middle"/>
+		</section>
+	</div></div>
+		<div class="slide" id="Fin"><div>
+		<section>
+			<header>								
+			</header>
+			<img src="pictures/cat.jpg" alt="" class="middle"/>
 		</section>
 	</div></div>
 	<div class="slide" id="MODXBY"><div>
@@ -174,8 +448,17 @@
 				<li><a href="https://github.com/modxcms/revolution" target="_blank">github</a></li>
 				<li><a href="http://modx.by">MODx по-русски</a></li>
 			</ul>		
-			<img src="pictures/modxby.png" alt="MODx по-русски" />
-			
+			<img src="pictures/modxby.png" alt="MODx по-русски" />			
+		</section>
+	</div></div>
+	<div class="slide" id="Questions"><div>
+		<section>
+			<header>
+				<h2>Вопросы?</h2>
+			</header>
+			<p class="center">
+			  <img src="pictures/vopros.jpg" alt="Вопросы" />
+			</p>
 		</section>
 	</div></div>
 	<div class="slide" id="ThankYou"><div>
