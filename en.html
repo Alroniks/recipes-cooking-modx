@@ -6,11 +6,28 @@
 	<meta name="viewport" content="width=1274, user-scalable=no">
 	<link rel="stylesheet" href="themes/ribbon/styles/style.css">
 	<style>
+	  .bg H2 {
+	    font-size: 70px;
+	  }
 		#Cover H2 {
 			color:#FFF;
-			text-align:center;
-			font-size:70px;
+			text-align:center;			
 			}
+		#Appetizer H2, #Hot H2, #Dessert H2, #Tea H2 {
+		  color: white;		  
+		}
+		#Soup H2 {
+		  color: white;		  
+		  text-align: right;
+		}
+		#TTX section, #Capot section {
+		  background: white;
+		}
+		#TTX img, #Capot img {
+		  width: 30%;
+		  float: right;
+		}
+		
 	</style>
 </head>
 <body class="list">
@@ -21,137 +38,144 @@
 	<div class="slide bg" id="Cover"><div>
 		<section>
 			<header>
-				<h2>Shower Presentation Template</h2>
+				<h2>Рецепты приготовления MODx</h2>			
 			</header>
 			<img src="pictures/cover.jpg" alt="">
-			<!-- © John Carey, http://fiftyfootshadows.net/ -->
 		</section>
 	</div></div>
-	<div class="slide" id="Header"><div>
+	<div class="slide bg" id="modx-admin"><div>
 		<section>
-			<header>
-				<h2>Header</h2>
-			</header>
-			<p>This <code>&lt;tool&gt;</code> is provided <strong>without</strong> warranty, guarantee, or much in the way of explanation. Note that use of this tool may or may not crash <em>your</em> browser.</p>
-			<p><a href="examples/index.htm" target="_blank">This link will be opened in the new tab</a></p>
+			<img src="pictures/modx-admin.png" alt="">
 		</section>
 	</div></div>
-	<div class="slide" id="TwoLinesHeader"><div>
+	<div class="slide" id="TTX"><div>
 		<section>
 			<header>
-				<h2>Two rows.<br>Mighty heading</h2>
-			</header>
-			<p>This <code>&lt;tool&gt;</code> is provided <strong>without</strong> warranty, guarantee, or much in the way of explanation. Note that use of this tool may or may not crash <em>your</em> browser.</p>
-		</section>
-	</div></div>
-	<div class="slide" id="UnorderedList"><div>
-		<section>
-			<header>
-				<h2>Unordered List</h2>
+				<h2>Требования</h2>			
 			</header>
 			<ul>
-				<li>This tool is provided</li>
-				<li>Without warranty, guarantee</li>
-				<li>Or much in the way of explanation
-					<ol>
-						<li>Note that use of this tool</li>
-						<li>May or may not crash your browser</li>
-						<li>Lock up your machine</li>
-					</ol>
-				</li>
-				<li>Erase your hard drive.</li>
+			  <li>Linux, Mac OS, Windows</li>
+			  <li>Apache 1.3.x - 2.2.x, IIS 6.0, lighttpd, Zeus</li>
+			  <li>PHP 5.1.1+</li>
+			  <li>MySQL 4.1.20+, кроме 5.0.51</li>
+			  <li>Mozilla Firefox 3.0+, Apple Safari 3.1.2+, IE 8+</li>
 			</ul>
+			<img src="pictures/gears.jpg" alt="" />
 		</section>
 	</div></div>
-	<div class="slide" id="OrderedList"><div>
+	<div class="slide" id="Capot"><div>
 		<section>
 			<header>
-				<h2>Ordered List</h2>
+				<h2>Под капотом</h2>			
 			</header>
-			<ol>
-				<li>Note that use of this tool</li>
-				<li>Erase your hard drive.</li>
-				<li>May or may not crash your browser
-					<ul>
-						<li>This tool is provided</li>
-						<li>Or much in the way of explanation</li>
-						<li>Without warranty, guarantee</li>
-					</ul>
-				</li>
-				<li>Lock up your machine</li>
-			</ol>
+			<ul>
+			  <li>xPDO 2.0</li>
+			  <li>Smarty</li>
+			  <li>xPDO Cache Manager</li>
+			  <li>Репозитории пакетов</li>
+			  <li>Права доступа</li>
+			  <li>Контексты</li>
+			</ul>
+			<img src="pictures/car.jpg" alt="" />
 		</section>
 	</div></div>
-	<div class="slide" id="InTheMiddle"><div>
+	<div class="slide bg" id="Appetizer"><div>
 		<section>
 			<header>
-				<h2>In the Middle</h2>
+				<h2>Закуска</h2>
 			</header>
-			<object data="pictures/semantics.svg" type="image/svg+xml" width="300" height="300" class="middle"></object>
+			<img src="pictures/salad.jpg" alt="" />	
 		</section>
 	</div></div>
-	<div class="slide bg" id="Picture"><div>
+	<div class="slide" id="CodeEx"><div>
 		<section>
 			<header>
-				<h2>Picture</h2>
+				<h2>[[ Элементы ]]</h2>
 			</header>
-			<img src="pictures/picture.jpg" alt="">
-			<!-- © Patrick H. Lauke, http://www.flickr.com/photos/redux/ -->
+			<ul>
+			  <li>[[$chunk]]</li>
+			  <li>[[snippet? &amp;paramName=`paramValue`]]</li>
+			  <li>[[*tvparam]]</li>
+			  <li>[[+placeholder]]</li>
+			</ul>			
 		</section>
 	</div></div>
-	<div class="slide" id="CodeSample"><div>
+	
+	<div class="slide" id="Template"><div>
 		<section>
 			<header>
-				<h2>Code Sample</h2>
+				<h2>Пример шаблона</h2>
 			</header>
-			<pre>
-				<code>&lt;html lang="en-US"&gt;</code>
-				<code><mark>&lt;head&gt;</mark></code>
-				<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-				<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-				<code>    &lt;link rel="stylesheet" href="s/screen.css"&gt;</code>
-				<code>    &lt;script src="j/jquery.js"&gt;&lt;/script&gt;</code>
-				<code><mark>&lt;/head&gt;</mark></code>
+			<pre>			  
+			  <code>&lt;head&gt;[[$head]]&lt;/head&gt;</code>
+			  <code>&lt;body&gt;</code>
+			  <code>  [[$header]]</code>
+			  <code>  &lt;div class="l-content"&gt;</code>
+			  <code>    [[$booklet]]</code>
+			  <code>    [[*content]]</code>
+			  <code>  &lt;/div&gt;</code>
+			  <code>  [[$footer]]​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​</code>
+			  <code>&lt;/body&gt;</code>
 			</pre>
 		</section>
 	</div></div>
-	<div class="slide" id="CodeNotes"><div>
+	
+	<div class="slide bg" id="Soup"><div>
 		<section>
 			<header>
-				<h2>Code Notes</h2>
+				<h2>Первое</h2>
 			</header>
-			<pre>
-				<code><mark>&lt;html</mark> lang="en-US"&gt;</code>
-			</pre>
-			<p class="note">May or may not crash your browser</p>
-			<pre>
-				<code><mark>&lt;meta</mark> charset="<mark>UTF-8</mark>"&gt;</code>
-			</pre>
-			<p class="note">Lock up your machine</p>
+			<img src="pictures/soup.jpg" alt="" />	
 		</section>
 	</div></div>
-	<div class="slide shout" id="Shout"><div>
+	<div class="slide bg" id="Hot"><div>
 		<section>
 			<header>
-				<h2>Warning<br>Message</h2>
+				<h2>Горячее</h2>				
 			</header>
+			<img src="pictures/hot.jpg" alt="" />	
 		</section>
 	</div></div>
-	<div class="slide shout" id="Demo"><div>
+	<div class="slide bg" id="Tea"><div>
 		<section>
 			<header>
-				<h2><a href="examples/index.htm" target="_blank">Demo</a></h2>
+				<h2>Чайку?</h2>				
 			</header>
+			<img src="pictures/tea.jpg" alt="" />	
 		</section>
 	</div></div>
-	<div class="slide" id="BlockQuote"><div>
+	<div class="slide bg" id="Dessert"><div>
 		<section>
 			<header>
-				<h2>Block Quote</h2>
+				<h2>Десерт</h2>				
 			</header>
-			<blockquote cite="Anonymous">
-				<p>This tool is provided without warranty, guarantee, or much in the way of explanation. Note that use of this tool may or may not crash your browser, lock up your machine, erase your hard drive.</p>
-			</blockquote>
+			<img src="pictures/dessert.jpg" alt="" />	
+		</section>
+	</div></div>
+	<div class="slide" id="Questions"><div>
+		<section>
+			<header>
+				<h2>Вопросы?</h2>
+			</header>
+			<p class="center">
+			  <img src="pictures/vopros.jpg" alt="Вопросы" />
+			</p>
+		</section>
+	</div></div>
+	<div class="slide" id="MODXBY"><div>
+		<section>
+			<header>
+				<h2>MODx в сети</h2>
+			</header>
+			<ul>
+				<li><a href="http://klimchuk.com" target="_blank">Официальный сайт</a></li>
+				<li><a href="http://bugs.modx.com" target="_blank">Bug Tracker</a></li>
+				<li><a href="http://rtfm.modx.com" target="_blank">Документация</a></li>
+				<li><a href="https://github.com/modxcms/revolution" target="_blank">github</a></li>
+				<li><a href="http://modx.by">MODx по-русски</a></li>
+			</ul>		
+			<img src="pictures/modxby.png" alt="MODx по-русски" />
+			
 		</section>
 	</div></div>
 	<div class="slide" id="ThankYou"><div>
@@ -164,7 +188,10 @@
 				<li><a href="http://klimchuk.com">klimchuk.com</a></li>
 				<li><a href="http://twitter.com/iklimchuk">twitter.com/iklimchuk</a></li>
 				<li><a href="mailto:ivan@klimchuk.com">ivan@klimchuk.com</a></li>
-			</ul>
+			</ul>			
+			<img src="pictures/lovata.png" alt="LOVATA Group" />&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="pictures/hh.png" alt="HeadHunter" />
+			
 		</section>
 	</div></div>
 	<!--
